@@ -1,0 +1,47 @@
+.certificate-intro {
+  padding: 4rem 0;
+  background: whitesmoke;
+}
+.card {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.card img {
+  height: 23rem;
+  border-radius: 0.3rem;
+}
+
+.card-content h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-ul {
+  margin: 2rem 0;
+}
+
+.card-ul li {
+  margin: 1rem 0;
+  display: flex;
+  margin-right: 1rem;
+}
+
+.card-ul li::before {
+  content: '';
+  width: 0.4rem;
+  height: 0.8rem;
+  display: block;
+  background: var(--color-orange);
+  margin-right: 1rem;
+}
+@media (max-width: 600px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}

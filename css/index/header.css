@@ -1,5 +1,6 @@
 .header {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  background: var(--bg-primary);
 }
 
 .logo {
@@ -28,8 +29,9 @@
 }
 
 @media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
+  .navbar,
+  .navbar ul {
+    margin: 0;
   }
   .navbar ul li {
     margin: 1rem;
@@ -39,17 +41,41 @@
   }
 }
 
+@media (max-width: 600px) {
+  .navbar,
+  .navbar ul {
+    margin: 0;
+  }
+
+  .navbar ul {
+    width: 9rem;
+    height: 14rem;
+    background: var(--bg-primary);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4rem 0 0 0;
+  }
+  .navbar ul li {
+    margin: 0;
+    width: 100%;
+    padding: 0 0.3rem;
+  }
+  .navbar ul li a {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+}
+
 @media (max-width: 400px) {
+  .header {
+    padding: 0.5rem 0;
+  }
   logo {
     text-align: center;
     margin: 0 auto;
     width: 100%;
-  }
-  .navbar,
-  .navbar ul {
-    flex-direction: column;
-  }
-  .navbar ul li a {
-    font-size: 0.8rem;
   }
 }

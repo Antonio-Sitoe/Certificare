@@ -1,16 +1,20 @@
 .bgs-intro {
-  background: var(--bg-primary);
-  height: 650px;
-  margin-bottom: 9rem;
+  background: url('../../Img/bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
+
+.bg-image {
+  background: rgba(0, 0, 0, 0.7);
+  height: 650px;
+}
+
 .introduction {
   margin: 1.5rem 0;
-}
-.introduction {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
 }
+
 .introduction-content p {
   color: var(--color-primary);
   margin: 2rem 0;
@@ -20,8 +24,6 @@
   color: var(--color-primary);
   margin: 3rem 0;
 }
-
-
 .btn {
   background: var(--color-orange);
   padding: 1rem 2rem;
@@ -37,5 +39,25 @@
 
 .introduction-image img {
   max-width: 450px;
-  
+}
+
+@media (max-width: 600px) {
+  .bg-image {
+    height: 400px;
+  }
+  .introduction {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .introduction-content p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .bg-image {
+    height: 500px;
+  }
 }

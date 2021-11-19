@@ -6,6 +6,7 @@
   --color-hover: #3b3b3b;
   --color-second: #b2b2b2;
   --color-orange: #fe9522;
+  --color-introbg: #111111;
 }
 html,
 body,
@@ -178,6 +179,47 @@ h4 {
 
 .subtitle {
   font-size: 3rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
   font-weight: bold;
+  text-align: center;
+}
+
+.subtitle::after {
+  content: '';
+  width: 2rem;
+  height: 6px;
+  display: block;
+  background: var(--color-orange);
+  margin: 1rem auto;
+}
+
+.buttonToogle {
+  background: #eee;
+  border-radius: 0.2rem;
+  height: 40px;
+  width: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.buttonToogle::after {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  box-shadow: 0 6px currentColor, 0 -6px currentColor;
+  transition: 0.2s;
+}
+
+@media (max-width: 600px) {
+  .buttonToogle {
+    display: flex;
+    z-index: 1;
+  }
 }

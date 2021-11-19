@@ -4,9 +4,9 @@
 }
 
 .image-testemunial {
-  background: url('../Img/blackwoman.jpg');
+  background: url('../../Img/blackwoman.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center center; 
   height: 500px;
 }
 
