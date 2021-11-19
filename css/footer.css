@@ -1,0 +1,48 @@
+.footer {
+  background: var(--bg-primary);
+  padding: 3rem 0;
+}
+
+.footer-contant {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.footer-title {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.footer-item ul {
+  display: grid;
+  gap: 1.5rem;
+  color: var(--color-second);
+  margin-bottom: 1rem;
+}
+.footer-item ul li {
+  margin: 0.3rem 0;
+}
+.footer-item ul li a {
+  color: var(--color-second);
+  padding: 0.4rem;
+}
+
+.footer-item ul li a:hover {
+  color: var(--color-primary);
+}
+
+.footer-p {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .footer-item ul {
+    gap: 0.6rem;
+  }
+    .footer-item ul li {
+      margin: 0;
+    }
+}

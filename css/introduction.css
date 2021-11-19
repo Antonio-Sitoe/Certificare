@@ -1,0 +1,41 @@
+.bgs-intro {
+  background: var(--bg-primary);
+  height: 650px;
+  margin-bottom: 9rem;
+}
+.introduction {
+  margin: 1.5rem 0;
+}
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.introduction-content p {
+  color: var(--color-primary);
+  margin: 2rem 0;
+  line-height: 1.5;
+}
+.title {
+  color: var(--color-primary);
+  margin: 3rem 0;
+}
+
+
+.btn {
+  background: var(--color-orange);
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  margin: 1rem 0;
+  color: var(--bg-primary);
+}
+.introduction-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.introduction-image img {
+  max-width: 450px;
+  
+}

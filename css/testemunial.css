@@ -1,0 +1,41 @@
+.testemunial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-testemunial {
+  background: url('../Img/blackwoman.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+
+.testemunial-left {
+  background: var(--color-orange);
+  padding: 2rem;
+}
+.testemunial-left h3 {
+  font-family: 'Merriweather', serif;
+  max-width: 400px;
+  font-weight: bold;
+  margin: 6rem auto 2rem auto;
+  text-align: center;
+  color: #512b00;
+  line-height: 1.5;
+}
+.testemunial-left p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .testemunial {
+    grid-template-columns: 1fr;
+  }
+  .testemunial-left {
+    padding: 1rem;
+  }
+  .testemunial-left h3 {
+    margin: 2rem auto;
+  }
+}
