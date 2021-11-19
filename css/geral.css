@@ -1,10 +1,7 @@
-@import url('./index/styles.css');
-@import url('./index/header.css');
-@import url('./index/introduction.css');
-@import url('./index/footer.css');
-@import url('./index/testemunial.css');
-@import url('./index/certificares.css');
-
-
-
-@import url('./certificate/intro.css');
+@import url('index/styles.css');
+@import url('index/header.css');
+@import url('index/introduction.css');
+@import url('index/footer.css');
+@import url('index/testemunial.css');
+@import url('index/certificares.css');
+@import url('certificate/intro.css');
