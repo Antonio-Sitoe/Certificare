@@ -154,15 +154,14 @@ h3 {
   font-size: 1.5rem;
 }
 
+p {
+  font-size: 1.5rem;
+  color: var(--color-hover);
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 0.6rem;
-}
-
-p {
-  font-size: 1.5rem;
-  color: var(--color-hover);
 }
 
 img {
@@ -221,5 +220,25 @@ h4 {
   .buttonToogle {
     display: flex;
     z-index: 1;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 1.7rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
