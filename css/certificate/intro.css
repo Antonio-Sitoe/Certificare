@@ -55,4 +55,7 @@
   .certificate-intro {
     margin-top: 3rem;
   }
+  .certificate-intro h1 {
+    font-size: 2.1rem;
+  }
 }
