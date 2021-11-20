@@ -2,6 +2,14 @@
   padding: 4rem 0;
   background: whitesmoke;
 }
+
+.certificate-intro h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.certificate-intro p {
+}
 .card {
   margin: 3rem 0;
   display: grid;
@@ -43,5 +51,8 @@
 @media (max-width: 600px) {
   .card {
     grid-template-columns: 1fr;
+  }
+  .certificate-intro {
+    margin-top: 3rem;
   }
 }

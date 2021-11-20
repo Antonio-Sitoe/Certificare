@@ -1,12 +1,11 @@
 /* reset */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:wght@400;700&display=swap');
 :root {
-  --bg-primary: #111111;
+  --bg-primary: #212529;
   --color-primary: whitesmoke;
   --color-hover: #3b3b3b;
-  --color-second: #b2b2b2;
-  --color-orange: #fe9522;
-  --color-introbg: #111111;
+  --color-second: #b1aeae;
+  --color-orange: #181743;
 }
 html,
 body,
@@ -181,6 +180,7 @@ h4 {
   margin: 3rem 0;
   font-weight: bold;
   text-align: center;
+  color: var(--bg-primary);
 }
 
 .subtitle::after {
@@ -242,3 +242,4 @@ h4 {
     font-size: 1rem;
   }
 }
+

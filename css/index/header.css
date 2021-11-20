@@ -1,21 +1,22 @@
 .header {
   padding: 0.5rem 0;
-  background: var(--bg-primary);
+  background: white;
   margin-bottom: 0;
 }
 
 .logo {
-  color: var(--color-primary);
+  color: var(--color-orange);
   font-weight: bold;
   font-size: 2.5rem;
+  max-width: 6rem;
 }
+
 .navbar,
 .navbar ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 1rem 0;
 }
 
 .navbar ul li {
@@ -23,7 +24,7 @@
 }
 
 .navbar ul li a {
-  color: var(--color-primary);
+  color: var(--color-orange);
   font-size: 1rem;
   padding: 0.8rem;
   border-radius: 0.3rem;
@@ -38,11 +39,19 @@
     margin: 1rem;
   }
   .navbar ul li a {
-    background: var(--color-hover);
+    background: var(--bg-primary);
+    color: var(--color-primary);
   }
 }
 
 @media (max-width: 600px) {
+  .header {
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
   .navbar,
   .navbar ul {
     margin: 0;
@@ -50,24 +59,45 @@
 
   .navbar ul {
     width: 9rem;
-    height: 14rem;
-    background: var(--bg-primary);
+    height: 100vh;
     position: absolute;
     top: 0;
-    right: 0;
-    padding: 4rem 0 0 0;
-    display: block;
+    left: 0;
+    padding: 1rem 0;
+    display: none;
+    z-index: 5;
+    background: white;
+    border: 1px solid black;
   }
+  .navbar ul.active {
+    display: block;
+    animation: 0.3s slow;
+  }
+
+  @keyframes slow {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .navbar ul li {
-    margin: .3rem 0 0 0;
+    margin: 0.3rem 0 0 0;
     width: 100%;
     padding: 0 0.3rem;
   }
   .navbar ul li a {
     display: block;
+    padding: 1rem;
     width: 100%;
     margin: 0 auto;
     border-radius: 0;
+    background: whitesmoke;
+    color: initial;
   }
 }
 

@@ -1,3 +1,5 @@
+
+
 .testemunial {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -6,7 +8,7 @@
 .image-testemunial {
   background: url('../../Img/blackwoman.jpg');
   background-size: cover;
-  background-position: center center; 
+  background-position: center center;
   height: 500px;
 }
 
@@ -20,12 +22,13 @@
   font-weight: bold;
   margin: 6rem auto 2rem auto;
   text-align: center;
-  color: #512b00;
+  color: var(--color-primary);
   line-height: 1.5;
 }
 .testemunial-left p {
   font-size: 1rem;
   text-align: center;
+  color: var(--color-second);
 }
 
 @media (max-width: 800px) {

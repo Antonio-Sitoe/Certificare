@@ -1,5 +1,5 @@
 .certificares {
-   margin-bottom: 9rem;
+  margin-bottom: 9rem;
 }
 
 .certificares-container {
@@ -10,19 +10,19 @@
 
 .certificares-self img {
   border-radius: 0.3rem;
-  
 }
 .certificares-self h4 {
   display: flex;
   align-items: center;
+  line-height: 1.2;
 }
 
 .certificares-self h4::before {
   content: '';
   width: 1rem;
-  height: .5rem;
+  height: 0.5rem;
   display: block;
-  background: chocolate;
+  background: var(--color-orange);
   margin-right: 1rem;
 }
 

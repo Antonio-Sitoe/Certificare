@@ -1,10 +1,16 @@
 .sobre {
   margin: 3rem 0;
 }
+
+.sobre h3 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
 .sobre p {
+  max-width: 800px;
   margin-bottom: 2rem;
   line-height: 1.5;
-  max-width: 800px;
+  font-size: 1.2rem;
 }
 
 .contacto-intro {
@@ -18,7 +24,7 @@
   grid-template-columns: 1fr 1fr;
   border-radius: 0.8rem;
   position: relative;
-  top: -5rem;
+  top: -10rem;
 }
 
 .localization {
@@ -53,7 +59,8 @@
 }
 
 .form form input[type='submit']:hover {
-  background: rgb(194, 130, 11);
+  background: var(--color-second);
+  color: var(--color-orange);
 }
 
 .form form input:hover,
@@ -61,7 +68,7 @@
 .form form textarea:hover,
 .form form textarea:focus {
   outline: none;
-  border: 1px solid salmon;
+  border: 1px solid rgb(42, 162, 241);
 }
 .title-contacto {
   font-size: 1.2rem;
@@ -110,6 +117,9 @@
   .wrapper {
     grid-template-columns: 1fr;
   }
+  .contacto-intro {
+    margin-top: 3rem;
+  }
 
   .wrapper span {
     margin-bottom: 1rem;
@@ -122,3 +132,45 @@
   }
 }
 
+.modalbg {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalbg.active {
+  display: flex;
+}
+
+.modal {
+  max-width: 300px;
+  background: whitesmoke;
+  padding: 3rem;
+  border-radius: 0.3rem;
+  position: relative;
+  margin: .6rem;
+}
+.modal h2 {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.modal span {
+  position: absolute;
+  width: 3rem;
+  height: 2rem;
+  background: #252525;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  cursor: pointer;
+}

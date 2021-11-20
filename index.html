@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certificare</title>
     <link rel="stylesheet" href="css/geral.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="navbar">
-          <a href="index.html" class="logo">Certificare</a>
-          <ul>
+          <a href="index.html" class="logo">
+            <img src="./Img/IMG-20211117-WA0044.jpg" alt="" />
+          </a>
+          <ul id="menu">
             <li><a href="certificates.html">Certificados</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
-          <button class="buttonToogle"></button>
+          <button class="buttonToogle" id="buttonToogle"></button>
         </nav>
       </div>
     </header>
-    <div class="bgs-intro">
-      <div class="bg-image">
-        <main class="bg-intro">
-          <div class="container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bg-image">
+            <img src="./Img/bg.jpg" alt="" />
             <div class="introduction">
               <div class="introduction-content">
                 <h1 class="title">Torne a sua empresa internacional.</h1>
@@ -37,9 +44,64 @@
               </div>
             </div>
           </div>
-        </main>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-image">
+            <img src="./Img/company.jpg" alt="" />
+            <div class="introduction">
+              <div class="introduction-content">
+                <h1 class="title">ISO 14001</h1>
+                <p>
+                  A ISO 14001 é aplicável a qualquer tipo de organização que tem
+                  por objetivo obter um desempenho ambiental correto, tem como
+                  buscar sua certificação por uma organização externa competente
+                </p>
+                <a href="" class="btn">Escolha a certificacao</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-image">
+            <img src="./Img/people.jpg" alt="" />
+            <div class="introduction">
+              <div class="introduction-content">
+                <h1 class="title">Iso 45001.</h1>
+                <p>
+                  A ISO 14001 é aplicável a qualquer tipo de organização que tem
+                  por objetivo obter um desempenho ambiental correto, tem como
+                  buscar sua certificação por uma organização externa
+                  competente.
+                </p>
+                <a href="" class="btn">Escolha a certificacao</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-image">
+            <img src="./Img/truck.jpg" alt="" />
+            <div class="introduction">
+              <div class="introduction-content">
+                <h1 class="title">ISO 9000</h1>
+                <p>
+                  A expressão ISO 9001 designa um grupo de normas técnicas que
+                  estabelecem um modelo de gestão da qualidade para organizações
+                  em geral, qualquer que seja o seu tipo ou dimensão
+                </p>
+                <a href="" class="btn">Escolha a certificacao</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+
     <section class="certificares">
       <div class="container">
         <h3 class="subtitle">Os nossos certificados</h3>
@@ -67,45 +129,47 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="teste-bg">
       <div class="container">
-        <h3 class="subtitle">O que os outros dizem</h3>
+        <h3 class="subtitle">Sobre nos</h3>
       </div>
       <div class="testemunial">
         <div class="image-testemunial"></div>
         <div class="testemunial-left">
           <h3>
-            Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez
-            foi intensificar o meu amor por esta atividade. Recomendo à todos
-            que amo.
+            Temos o intuito de garantir a otimização de processos, maior
+            agilidade no desenvolvimento de produtos e produção mais ágil a fim
+            de satisfazer os clientes e alcançar o sucesso sustentado.
           </h3>
 
-          <p>Ana Júlia</p>
+          <p>Ana Júlia, CEO</p>
         </div>
       </div>
     </section>
     <footer class="footer">
       <div class="container">
         <div class="footer-contant">
-          <div>
-            <a href="" class="logo">Certificare</a>
-          </div>
-
           <div class="footer-item">
             <h3 class="footer-title">CONTATO</h3>
             <ul>
-              <li>+55 21 9999-9999</li>
-              <li>contato@bikcraft.com</li>
+              <li>+258 848984953</li>
+              <li>antonio@sitoe.com</li>
             </ul>
             <hr class="hr" />
             <ul>
-              <li>Rua Ali Perto, 42 - Botafogo</li>
-              <li>Rio de Janeiro - RJ</li>
+              <li>Maputo, Machava-sede</li>
+              <li>Mozambique</li>
             </ul>
             <hr class="hr" />
-            <ul>
-              <li>fb</li>
-              <li>insta</li>
+            <ul class="ul-footer">
+              <li>
+                <a href="">
+                  <img src="./Img/Instagram.svg" class="icon" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href=""> <img src="./Img/fb.svg" class="icon" alt="" /> </a>
+              </li>
             </ul>
           </div>
 
@@ -113,15 +177,17 @@
             <h3 class="footer-title">INFORMAÇÕES</h3>
             <ul>
               <li>
-                <a href="">Certificados</a>
+                <a href="certificates.html">Certificados</a>
               </li>
-              <li><a href="">Sobre</a></li>
-              <li><a href="">Contato</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="contato.html">Contato</a></li>
             </ul>
           </div>
         </div>
-        <p class="footer-p">Bikcraft © Alguns direitos reservados.</p>
+        <p class="footer-p">NobleStack © Alguns direitos reservados.</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/scripts.js"></script>
   </body>
 </html>
