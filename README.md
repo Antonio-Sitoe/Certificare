@@ -1,3 +1,3 @@
 # Certificare
  
-https://antonio-sitoe.github.io/Certificare/
+https://certificare.vercel.app/
