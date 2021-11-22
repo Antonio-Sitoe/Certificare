@@ -216,7 +216,7 @@ h4 {
   transition: 0.2s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .buttonToogle {
     display: flex;
     z-index: 1;

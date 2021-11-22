@@ -1,5 +1,5 @@
 .footer {
-background: whitesmoke;
+  background: whitesmoke;
   padding: 2rem 0;
 }
 
@@ -12,7 +12,9 @@ background: whitesmoke;
 .footer-title {
   color: var(--color-orange);
   text-transform: uppercase;
+  font-weight: bold;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .footer-item ul {
@@ -33,14 +35,16 @@ background: whitesmoke;
 
 .footer-p {
   font-size: 1rem;
-  text-align: right;
+  text-align: center;
 }
 
-
 .ul-footer {
-  display: grid;
-  grid-template-columns: 3rem 3rem;
-  gap: 1rem;
+  display: flex !important;
+  align-items: center;
+}
+
+.ul-footer ul li a{
+  border: 1px solid red;
 }
 
 .icon {
@@ -51,7 +55,7 @@ background: whitesmoke;
   .footer-item ul {
     gap: 0.6rem;
   }
-    .footer-item ul li {
-      margin: 0;
-    }
+  .footer-item ul li {
+    margin: 0;
+  }
 }

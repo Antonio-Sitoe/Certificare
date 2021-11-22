@@ -39,12 +39,12 @@
     margin: 1rem;
   }
   .navbar ul li a {
-    background: var(--bg-primary);
+    background: var(--color-orange);
     color: var(--color-primary);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .header {
     position: fixed;
     top:0 ;

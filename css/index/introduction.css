@@ -3,20 +3,17 @@
   height: 100%;
   display: grid;
 }
-
 .bg-image img {
   grid-area: 1/1;
-   max-height: 80vh;
+  max-height: 80vh;
 }
-
 .bg-image div {
   grid-area: 1/1;
-
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  padding-bottom: 1rem;
 }
-
 .btn {
   border: 1px solid;
   background: var(--color-orange);
@@ -26,7 +23,6 @@
   color: whitesmoke;
   z-index: 10000;
 }
-
 .btn:hover {
   background: whitesmoke;
   color: var(--color-orange);
