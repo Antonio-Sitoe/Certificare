@@ -10,5 +10,10 @@
 
 .simbolGrid div {
   border: 1px solid whitesmoke;
-  padding: 2rem;
+  padding: 3rem ;
+}
+
+.simbolGrid div img {
+  max-width: 8rem;
+  margin: 1rem auto;
 }

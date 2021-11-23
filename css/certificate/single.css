@@ -15,12 +15,13 @@
   margin-bottom: 3rem;
 }
 
-.single-card div {
+.single-card  div {
   padding: 1rem 0;
 }
 
+
 @media (max-width: 600px) {
-  .single-card {
+.single-card {
     grid-template-columns: 1fr;
   }
   .single-intro {
