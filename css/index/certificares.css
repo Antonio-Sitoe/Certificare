@@ -1,4 +1,5 @@
 .certificares {
+  margin-top: 5rem;
   margin-bottom: 9rem;
 }
 
@@ -7,10 +8,13 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
 }
-
+.certificares-self h4:hover {
+  text-decoration: underline;
+}
 .certificares-self img {
   border-radius: 0.3rem;
 }
+
 .certificares-self h4 {
   display: flex;
   align-items: center;
@@ -28,4 +32,5 @@
 
 .certificares-self span {
   margin-left: 1.8rem;
+  color: var(--bg-primary);
 }

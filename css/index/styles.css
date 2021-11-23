@@ -181,6 +181,7 @@ h4 {
   font-weight: bold;
   text-align: center;
   color: var(--bg-primary);
+
 }
 
 .subtitle::after {

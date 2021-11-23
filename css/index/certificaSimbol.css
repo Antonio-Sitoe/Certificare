@@ -1,0 +1,14 @@
+.certificacoes-simbol {
+  margin-bottom: 9rem;
+}
+
+.simbolGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.simbolGrid div {
+  border: 1px solid whitesmoke;
+  padding: 2rem;
+}

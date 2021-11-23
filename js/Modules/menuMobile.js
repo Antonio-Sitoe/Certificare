@@ -6,11 +6,11 @@ const menuMobile = () => {
     closeSpan = document.querySelector('#modalspan');
 
   function openMenu() {
-    menu.classList.toggle('active');
+    if (menu) menu.classList.toggle('active');
   }
   function openModal(e) {
     e.preventDefault();
-    modal.classList.toggle('active');
+    if (modal) modal.classList.toggle('active');
   }
   if (btn) btn.addEventListener('click', openMenu);
   if (certification) certification.addEventListener('click', openModal);
