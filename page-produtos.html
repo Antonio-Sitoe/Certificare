@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato</title>
+    <title>Certificados - Lista</title>
     <link
       rel="shortcut icon"
       href="./Img/IMG-20211117-WA0044.jpg"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -29,70 +35,29 @@
         </nav>
       </div>
     </header>
-
-    <section class="contacto-intro">
+    <section class="single-intro">
       <div class="container">
-        <p>Entre em contacto conosco caso tenha alguma duvida</p>
+        <h1>Formacao coorporativa</h1>
       </div>
     </section>
-    <div class="container">
-      <main class="contato">
-        <div class="localization">
-          <p class="title-contacto">Certificare</p>
 
-          <ul class="locali-ul-1">
-            <li>Maputo cidade, Predio jat</li>
-            <li>Mozambique</li>
-          </ul>
-
-          <ul class="emails">
-            <li>Email: geral@certificare.me</li>
-          </ul>
-          <ul class="number">
-            <li>Tel: +258 826247037</li>
-          </ul>
-          <ul class="redes">
-            <li>facebook : antontio sitoe</li>
-          </ul>
+    <main>
+      <div class="container">
+        <div class="single-card">
+          <img src="Img/produto.jpg" alt="" />
+          <div class="card-content">
+           <p></p>
+            <ul class="card-ul">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>   
+            </ul>
+          </div>
         </div>
-        <div class="form">
-          <form action="">
-            <div class="wrapper">
-              <span>
-                <label for="name">Nome</label>
-                <input type="text" id="name" placeholder="Seu nome" />
-              </span>
-              <span>
-                <label for="tel">Telefone</label>
-                <input
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                  placeholder="+258 888888888"
-                />
-              </span>
-            </div>
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="amigo@gmail.com"
-            />
+      </div>
+    </main>
 
-            <label for="">Mensagem</label>
-            <textarea
-              name="Mensagem"
-              id="Mensagem"
-              cols="10"
-              rows="5"
-              placeholder="O que voce precisa?"
-            ></textarea>
-            <input type="submit" value="Enviar mensagem" />
-          </form>
-        </div>
-      </main>
-    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer-contant">
@@ -164,6 +129,14 @@
         <p class="footer-p">Certificare © Alguns direitos reservados.</p>
       </div>
     </footer>
+
+    <div class="modalbg">
+      <div class="modal">
+        <span id="modalspan">x</span>
+        <h2>Do momento nao e possivel aceder</h2>
+      </div>
+    </div>
+
     <script type="module" src="./js/scripts.js"></script>
   </body>
 </html>

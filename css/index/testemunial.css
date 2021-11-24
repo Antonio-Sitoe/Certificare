@@ -1,19 +1,20 @@
-
-
 .testemunial {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
 }
 
-.image-testemunial {
-  background: url('../../Img/blackwoman.jpg');
-  background-size: cover;
-  background-position: center center;
-  height: 500px;
+.test-img {
+text-align: center;
+}
+
+.test-img img {
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .testemunial-left {
-  background: var(--color-orange);
   padding: 2rem;
 }
 .testemunial-left h3 {
@@ -22,7 +23,7 @@
   font-weight: bold;
   margin: 6rem auto 2rem auto;
   text-align: center;
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
   line-height: 1.5;
 }
 .testemunial-left p {

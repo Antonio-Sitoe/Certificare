@@ -7,6 +7,10 @@
   --color-second: #b1aeae;
   --color-orange: #181743;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 html,
 body,
 div,
@@ -177,11 +181,10 @@ h4 {
 
 .subtitle {
   font-size: 3rem;
-  margin: 3rem 0;
+  margin: 1rem 0;
   font-weight: bold;
   text-align: center;
   color: var(--bg-primary);
-
 }
 
 .subtitle::after {
@@ -243,4 +246,3 @@ h4 {
     font-size: 1rem;
   }
 }
-

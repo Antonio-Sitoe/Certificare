@@ -10,7 +10,7 @@
       type="image/x-icon"
     />
     <title>Home - Pagina inicial</title>
-    <link rel="stylesheet" href="css/geral.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -25,7 +25,7 @@
           </a>
           <ul id="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="certificates.html">Certificados</a></li>
+            <li><a href="#servicos">Nossos servicos</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
@@ -35,19 +35,18 @@
     </header>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+       
         <div class="swiper-slide">
           <div class="bg-image">
-            <img src="./Img/bg.jpg" alt="bg" />
-            <div>
-              <a href="certificates.html" class="btn">Escolha a certificacao</a>
-            </div>
+            <img src="./Img/emConstrucao.jpg" alt="bg" />
+          
           </div>
         </div>
         <div class="swiper-slide">
           <div class="bg-image">
             <img src="./Img/company.jpg" alt="bg" />
             <div>
-              <a href="certificates.html" class="btn">Escolha a certificacao</a>
+              <a href="#servicos" class="btn">Escolha a certificacao</a>
             </div>
           </div>
         </div>
@@ -55,7 +54,7 @@
           <div class="bg-image">
             <img src="./Img/people.jpg" alt="bg" />
             <div>
-              <a href="certificates.html" class="btn">Escolha a certificacao</a>
+              <a href="#servicos"  class="btn">Escolha a certificacao</a>
             </div>
           </div>
         </div>
@@ -63,7 +62,7 @@
           <div class="bg-image">
             <img src="./Img/truck.jpg" alt="bg" />
             <div>
-              <a href="certificates.html" class="btn">Escolha a certificacao</a>
+              <a href="#servicos"  class="btn">Escolha a certificacao</a>
             </div>
           </div>
         </div>
@@ -73,36 +72,33 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <section class="certificares">
+    <section class="certificares" id="servicos">
       <div class="container">
-        <h3 class="subtitle">Os nossos certificados</h3>
+        <h3 class="subtitle">Nossos servicos</h3>
         <div class="certificares-container">
-          <a href="single.html">
+          <a href="page-maquinas.html">
             <div class="certificares-self">
               <img src="Img/produto.jpg" alt="" />
-              <h4>Certificacao de maquinas e equipamentos</h4>
-              <span>ISO 4000</span>
+              <h4>Certificacao de conformidade para maquinas e equipamentos</h4>
             </div>
           </a>
-          <a href="">
+          <a href="page-pessoas.html">
             <div class="certificares-self">
               <img src="Img/produto.jpg" alt="" />
-              <h4>Certificacao de maquinas e equipamentos</h4>
-              <span>ISO 4000</span>
+              <h4>Certificacao de operadores</h4>
+              <span></span>
             </div>
           </a>
-          <a href="">
+          <a href="page-empresas.html">
             <div class="certificares-self">
               <img src="Img/produto.jpg" alt="" />
-              <h4>Certificacao de maquinas e equipamentos</h4>
-              <span>ISO 4000</span>
+              <h4>Certificacao de empresas</h4>
             </div>
           </a>
-          <a href="">
+          <a href="page-produtos.html">
             <div class="certificares-self">
               <img src="Img/produto.jpg" alt="" />
-              <h4>Certificacao de maquinas e equipamentos</h4>
-              <span>ISO 4000</span>
+              <h4>Formacao coorporativa</h4>
             </div>
           </a>
         </div>
@@ -110,16 +106,16 @@
     </section>
     <section class="certificacoes-simbol">
       <div class="container">
-        <h3 class="subtitle">Certificacoes</h3>
+        <h3 class="subtitle"></h3>
         <div class="simbolGrid">
           <div>
-            <img src="./Img/iso-45001.png" alt="" />
+            <img src="./Img/iso-14001.png" alt="" />
           </div>
           <div>
             <img src="./Img/iso-45001.png" alt="" />
           </div>
           <div>
-            <img src="./Img/iso-45001.png" alt="" />
+            <img src="./Img/iso-9001.png" alt="" />
           </div>
         </div>
       </div>
@@ -129,15 +125,18 @@
         <h3 class="subtitle">Sobre nos</h3>
       </div>
       <div class="testemunial">
-        <div class="image-testemunial"></div>
+        <div class="test-img">
+          <h4>Nosso ADN</h4>
+          <img src="./Img/blackwoman.jpg" alt="" />
+        </div>
         <div class="testemunial-left">
-          <h3>
-            Temos o intuito de garantir a otimização de processos, maior
-            agilidade no desenvolvimento de produtos e produção mais ágil a fim
-            de satisfazer os clientes e alcançar o sucesso sustentado.
-          </h3>
-
-          <p>Ana Júlia, CEO</p>
+          <ul class="quadradinho">
+            <li style="color: #e6e600">Excelência Técnica</li>
+            <li style="color: #4850ff">Resiliência para atingir objectivos</li>
+            <li style="color: #00c000">Ouvir e compreender o mercado</li>
+            <li style="color: #ae00fe">Visão e Âmbição</li>
+            <li style="color: brown">Integrador de soluções e pessoas</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -147,12 +146,12 @@
           <div class="footer-item">
             <h3 class="footer-title">CONTATO</h3>
             <ul>
-              <li>+258 848984953</li>
+              <li>+258 826247037</li>
               <li>geral@certificare.me</li>
             </ul>
             <hr class="hr" />
             <ul>
-              <li>Maputo, Machava-sede</li>
+              <li>Maputo cidade, Predio jat</li>
               <li>Mozambique</li>
             </ul>
             <hr class="hr" />
@@ -190,14 +189,26 @@
                 <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="certificates.html">Certificados</a>
+                <a href="#servicos">Nossos servicos</a>
               </li>
               <li><a href="sobre.html">Sobre</a></li>
               <li><a href="contato.html">Contato</a></li>
             </ul>
           </div>
+          <div class="footer-item footer-3">
+            <h3 class="footer-title">Parceiros</h3>
+            <ul>
+              <li>Em construcao</li>
+            </ul>
+          </div>
+          <div class="footer-item footer-3">
+            <h3 class="footer-title">Clientes</h3>
+            <ul>
+              <li>Em construcao</li>
+            </ul>
+          </div>
         </div>
-        <p class="footer-p">NobleStack © Alguns direitos reservados.</p>
+        <p class="footer-p">Certificare © Alguns direitos reservados.</p>
       </div>
     </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
