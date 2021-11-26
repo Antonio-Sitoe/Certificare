@@ -1,16 +1,18 @@
 .certificares {
   margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .certificares-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
 }
-.certificares-self h4:hover {
-  text-decoration: underline;
+
+.certificares-self {
+  display: grid;
 }
+
 .certificares-self img {
   border-radius: 0.3rem;
   height: 15rem;
@@ -20,7 +22,10 @@
   display: flex;
   align-items: center;
   line-height: 1.2;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
+
 
 .certificares-self h4::before {
   content: '';
@@ -34,4 +39,14 @@
 .certificares-self span {
   margin-left: 1.8rem;
   color: var(--bg-primary);
+}
+
+.btnGrey {
+  display: block;
+  background: #529c52;
+  padding: .6rem;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 0.3rem;
+  align-self: flex-end;
 }
