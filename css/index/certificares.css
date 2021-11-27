@@ -5,7 +5,7 @@
 
 .certificares-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -15,7 +15,7 @@
 
 .certificares-self img {
   border-radius: 0.3rem;
-  height: 15rem;
+  height: 13rem;
 }
 
 .certificares-self h4 {
@@ -23,7 +23,7 @@
   align-items: center;
   line-height: 1.2;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 
@@ -49,4 +49,5 @@
   color: whitesmoke;
   border-radius: 0.3rem;
   align-self: flex-end;
+   font-size: 1rem;
 }
