@@ -135,7 +135,7 @@
 @media (max-width: 600px) {
   .form form input,
   .form form textarea {
-   width: 100%;
+    width: 100%;
   }
 }
 
@@ -180,4 +180,42 @@
   justify-content: center;
   color: whitesmoke;
   cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pol {
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 600px;
+  display: grid;
+  gap: .6rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: 1fr 1fr;
+}
+
+.pol a {
+  padding: 1rem;
+  border: none;
+  background: #529c52;
+  color: whitesmoke;
+  border-radius: .3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .pol {
+    margin-top: 2rem;
+  }
 }

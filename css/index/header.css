@@ -41,6 +41,7 @@
   .navbar ul li a {
     background: var(--color-orange);
     color: var(--color-primary);
+    padding: .6rem;
   }
 }
 
