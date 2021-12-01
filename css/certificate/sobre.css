@@ -219,3 +219,15 @@
     margin-top: 2rem;
   }
 }
+
+.list-style {
+  list-style:initial;
+
+}
+
+.list-style li {
+  margin: 1rem 0;
+  color: var(--bg-primary);
+  line-height: 1.5;
+  
+}
