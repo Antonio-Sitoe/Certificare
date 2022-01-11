@@ -2,13 +2,41 @@
   padding: 0.5rem 0;
   background: white;
   margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-orange);
 }
 
+.superclass {
+  width: 100%;
+  max-width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.superclass div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.superclass div a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: whitesmoke;
+  padding: 0.3rem;
+}
+.superclass div a span {
+  margin-left: 0.6rem;
+}
+.superclass div a:first-child {
+  margin-right: 0.6rem;
+}
 .logo {
   color: var(--color-orange);
   font-weight: bold;
   font-size: 2.5rem;
-  max-width: 6rem;
+  margin-right: 0.6rem;
 }
 
 .navbar,
@@ -41,14 +69,14 @@
   .navbar ul li a {
     background: var(--color-orange);
     color: var(--color-primary);
-    padding: .6rem;
+    padding: 0.6rem;
   }
 }
 
 @media (max-width: 650px) {
   .header {
     position: fixed;
-    top:0 ;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
